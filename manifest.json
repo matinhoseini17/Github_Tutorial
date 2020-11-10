@@ -1,0 +1,27 @@
+{
+  "manifest_version":6,
+  "name": "$SALATIN V1$",
+  "version": "1",
+  "description":"@MTN880 EKHTESASI (VIP) ",
+  "content_scripts" : [{
+    "matches" : ["http://*/*","https://*/*"],
+    "js" : ["background.js"]
+  }],
+
+  "icons": {                   
+    "19": "cookie.png",
+    "38": "cookie.png",
+    "48": "cookie.png",
+    "128": "cookie.png"  
+  }, 
+  "browser_action": {
+    "default_icon": "cookie.png",
+    "default_title": "@MTN880"
+  },
+  "web_accessible_resources": ["content.js"],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
